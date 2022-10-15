@@ -14,12 +14,20 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 :root {
   --main-bg-color:#F2F2F2;
   --main-color: #000000;
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -28,8 +36,40 @@ body {
   width: 100%;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-header {
   background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 570;
+  margin: 0;
+  margin-right: auto;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.logo-link {
+  display: block;
+  width: 140px;
+  margin: 0;
+  margin-left: 0;
+  padding-left: 70px;
+}
+
+.navigation-user {
+  width: 310px;
+  margin: 0;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -40,7 +80,13 @@ body {
   color: var(--main-color);
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .hero {
+  display: block;
   width: 1200px;
   min-height: 485px;
   background-color: #444444;
@@ -52,14 +98,27 @@ body {
 }
 
 .hero-image {
-  position: absolute;
-    right: 371px;
-    top: 51px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
 }
 
 
 .advantages {
   text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .short-description {
@@ -76,6 +135,10 @@ body {
 }
 
 .advantages-fisrt-block {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
   color: #ffffff;
   background-color: #82B3D3;
 }
@@ -88,17 +151,24 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-list-inner {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-title-inner {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  background-color: rgba(131, 179, 211, 0.12);
+
 }
 
 .advantages-item-inner {
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantages-block-blue {
@@ -110,6 +180,7 @@ body {
 }
 
 .inn-search {
+  width: 1200px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -121,17 +192,24 @@ body {
   text-transform: uppercase;
 }
 
-.newsletter-with-pic-container {
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter-with-pic-container {
   min-height: 415px;
   color: #ffffff;
+  width: 1200px;
   text-align: center;
   background-color: #444444;
   background-image: url("../images/background-photos/subscribe-background.jpg");
   background-position: 0 top;
   background-repeat: no-repeat;
-  padding: 96px 258px 104px 258px;
-  background-size: 100% auto;
+  padding-top: 96px;
+  background-size: cover;
 }
 
 .footer-phone-number {
@@ -154,6 +232,18 @@ body {
   background-repeat: no-repeat;
 
 }
+  .inner-header {
+    margin: 0;
+    flex-wrap: wrap ;
+  }
+
+.catalog {
+  width: 1060px;
+}
+
+.catalog-filter-group {
+  display: flex;
+}
 
 .catalog-title {
   font-weight: 700;
@@ -163,6 +253,12 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
+}
+
+.select-control-container {
+  width: 1060px;
+  display: flex;
+  margin: 0 70px;
 }
 
 .catalog-filter-title {
@@ -198,6 +294,30 @@ body {
 .cheap {
   color: #333333;
 }
+
+.inn-card-image {
+  display: block;
+}
+
+.inns-card {
+  width: 1060px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.inn-card-item {
+  margin: 0 10px;
+  justify-content: space-between;
+  padding: 20px;
+  width: 280px;
+  list-style-type: none;
+}
+
 
 .inn-card-title {
   font-weight: 700;
@@ -242,8 +362,13 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.pagination {
+  display: flex;
+}
+
 .pagination-item {
-  background-color: #82B3D3;
+  width: 60px;
+  margin: 8px;
 }
 
 
@@ -252,6 +377,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
+  background-color: #82B3D3;
   text-decoration: none;
 }
 
@@ -269,5 +395,6 @@ body {
   color: var(--main-color);
   text-align: center;
   background-color: #ffffff;
-  padding: 96px 258px 104px 258px;
+  padding-top: 96px;
+  background-size: cover;
 }
