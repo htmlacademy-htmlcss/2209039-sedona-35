@@ -25,12 +25,12 @@
         </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -118,21 +118,23 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <div class="select-control-container">
-        <span class="search-result">Найдено гостиниц: 38</span>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-        <a class="sort-button sort-current" href="#">
-          <span class="visually-hidden">Показать плиткой</span>
-        </a>
-        <a aria-label="Показать карточками" class="sort-button" href="#">
-          <span class="visually-hidden">Показать карточками</span>
-        </a>
-        <a aria-label="Показать списком" class="sort-button" href="#">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+          <span class="search-result">Найдено гостиниц: 38</span>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          <div class="sort-button-container">
+            <a class="sort-button sort-current" href="#">
+              <span class="visually-hidden">Показать плиткой</span>
+            </a>
+            <a class="sort-button" aria-label="Показать карточками" class="sort-button" href="#">
+              <span class="visually-hidden">Показать карточками</span>
+            </a>
+            <a class="sort-button" aria-label="Показать списком" class="sort-button" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </div>
         </div>
         <ul class="inns-card">
           <li class="inn-card-item">
@@ -212,28 +214,31 @@
               <span class="newsletter-button-text">Подписаться</span>
             </button>
           </form>
-        </section>
+        </div>
+      </section>
+      <div class="footer-bottom">
         <section class="footer-social">
           <h2 class="visually-hidden">Подпишитесь на наши социальные сети!</h2>
-          <ul class="fotter-social-list">
-            <li>
-              <a aria-label="Вконтакте" class="social-button" href="https://vk.com/htmlacademy">Вконтакте</a>
-            <li>
-              <a aria-label="Телеграм" class="social-button" href="https://t.me/htmlacademy">Телеграм</a>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a aria-label="Вконтакте" class="social-button visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <li class="footer-social-item">
+              <a aria-label="Телеграм" class="social-button visually-hidden" href="https://t.me/htmlacademy">Телеграм</a>
             </li>
-            <li>
-              <a aria-label="YouTube" class="social-button" href="https://www.youtube.com/user/htmlacademy">YouTube</a>
+            <li class="footer-social-item">
+              <a aria-label="YouTube" class="social-button visually-hidden" href="https://www.youtube.com/user/htmlacademy">YouTube</a>
             </li>
           </ul>
-      </section>
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Наш номер телефона</h2>
-        <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
-      <a href="https://htmlacademy.ru">Логотип HTML Academy
-      </a>
-      </div>
+        </section>
+        <section class="footer-phone">
+          <h2 class="visually-hidden">Наш номер телефона</h2>
+          <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
+        <div class="footer-logo">
+          <a class="visually-hidden" href="https://htmlacademy.ru">Логотип HTML Academy</a>
+        </div>
+        </div>
+        </div>
     </footer>
-    </div>
   </body>
   </html>

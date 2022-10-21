@@ -24,12 +24,12 @@
         </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -54,43 +54,47 @@
             <ul class="advantages-list">
               <li class="advantages-item">
                 <div class="advantages-fisrt-block">
+                  <div class="fisrt-block-text-container">
                   <h3 class="advantages-title">Настоящий городок</h3>
                   <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  </div>
                   <img src="images/index-main-content/photo-1.jpg" width="800" height="384" alt="фотография города">
                 </div>
                 <ul class="advantages-list-inner">
                   <li class="advantages-item-inner">
                     <b class="advantages-title-inner">Небольшая площадь</b>
-                    <p>Все достопримечательности находятся очень близко</p>
+                    <p class="advantages-description-inner">Все достопримечательности находятся очень близко</p>
                   </li>
                   <li class="advantages-item-inner advantages-block-blue">
                     <h4 class="advantages-title-inner">Красивая дорога</h4>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <p class="advantages-description-inner">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </li>
                   <li class="advantages-item-inner">
                     <b class="advantages-title-inner">Мало туристов</b>
-                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    <p class="advantages-description-inner">Большинство едет в Гранд Каньон и толпится там</p>
                   </li>
                 </ul>
               </li>
               <li class="advantages-item">
                 <div class="advantages-fisrt-block">
                   <img src="images/index-main-content/photo-2.jpg" width="800" height="384" alt="мост дьявола">
+                  <div class="fisrt-block-text-container">
                   <h3 class="advantages-title">Там есть мост дьявола</h3>
                   <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                  </div>
                 </div>
                 <ul class="advantages-list-inner">
-                  <li class="advantages-item-inner">
+                  <li class="advantages-item-inner advanatges-facilities">
                     <b class="advantages-title-inner">Жильё</b>
-                    <p>Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+                    <p class="advantages-description-inner">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
                   </li>
-                  <li class="advantages-item-inner advantages-block-white"">
+                  <li class="advantages-item-inner advantages-block-white advanatges-facilities">
                     <b class="advantages-title-inner">Еда</b>
-                    <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="advantages-description-inner">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                   </li>
-                  <li class="advantages-item-inner">
+                  <li class="advantages-item-inner advanatges-facilities">
                     <b class="advantages-title-inner">Сувениры</b>
-                    <p>Не только китайского, но и настоящего местного производства!</p>
+                    <p class="advantages-description-inner">Не только китайского, но и настоящего местного производства!</p>
                   </li>
                 </ul>
               </li>
@@ -98,8 +102,8 @@
         </section>
         <section class="inn-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <span class="short-description">Заинтересовались?</span>
-          <p class="advantages-list-preview">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <span class="short-description short-description-search">Заинтересовались?</span>
+          <p class="advantages-list-preview advantages-list-preview-search">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button inn-search-button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
       </div>
@@ -118,27 +122,30 @@
             </button>
           </form>
         </div>
-        </section>
+      </section>
+        <div class="footer-bottom">
         <section class="footer-social">
           <h2 class="visually-hidden">Подпишитесь на наши социальные сети!</h2>
-          <ul class="fotter-social-list">
-            <li>
-              <a aria-label="Вконтакте" class="social-button" href="https://vk.com/htmlacademy">Вконтакте</a>
-            <li>
-              <a aria-label="Телеграм" class="social-button" href="https://t.me/htmlacademy">Телеграм</a>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a aria-label="Вконтакте" class="social-button visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <li class="footer-social-item">
+              <a aria-label="Телеграм" class="social-button visually-hidden" href="https://t.me/htmlacademy">Телеграм</a>
             </li>
-            <li>
-              <a aria-label="YouTube" class="social-button" href="https://www.youtube.com/user/htmlacademy">YouTube</a>
+            <li class="footer-social-item">
+              <a aria-label="YouTube" class="social-button visually-hidden" href="https://www.youtube.com/user/htmlacademy">YouTube</a>
             </li>
           </ul>
-      </section>
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Наш номер телефона</h2>
-        <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
-      <a href="https://htmlacademy.ru">Логотип HTML Academy
-      </a>
-      </div>
+        </section>
+        <section class="footer-phone">
+          <h2 class="visually-hidden">Наш номер телефона</h2>
+          <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
+        <div class="footer-logo">
+          <a class="visually-hidden" href="https://htmlacademy.ru">Логотип HTML Academy</a>
+        </div>
+        </div>
+        </div>
     </footer>
 
     <div class="modal-form-container">
