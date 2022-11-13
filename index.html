@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
@@ -69,15 +70,15 @@
                 </div>
                 <ul class="advantages-list-inner">
                   <li class="advantages-item-inner advantages-item-town">
-                    <b class="advantages-title-inner">Небольшая площадь</b>
+                    <p class="advantages-title-inner">Небольшая<br>площадь</p>
                     <p class="advantages-description-inner">Все достопримечательности находятся очень близко</p>
                   </li>
                   <li class="advantages-item-inner advantages-block-blue advantages-item-town">
-                    <h4 class="advantages-title-inner">Красивая дорога</h4>
+                    <h4 class="advantages-title-inner">Красивая<br>дорога</h4>
                     <p class="advantages-description-inner">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </li>
                   <li class="advantages-item-inner advantages-item-town">
-                    <b class="advantages-title-inner">Мало туристов</b>
+                    <b class="advantages-title-inner">Мало<br>туристов</b>
                     <p class="advantages-description-inner">Большинство едет в Гранд Каньон и толпится там</p>
                   </li>
                 </ul>
@@ -86,22 +87,22 @@
                 <div class="advantages-first-block">
                   <img src="images/index-main-content/photo-2.jpg" width="800" height="384" alt="мост дьявола.">
                   <div class="first-block-text-container">
-                    <h3 class="advantages-title">Там есть мост дьявола</h3>
+                    <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
                     <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                   </div>
                 </div>
                 <ul class="advantages-list-inner">
-                  <li class="advantages-item-inner advantages-housing">
+                  <li class="advantages-item-inner advantages-item-inner-service advantages-housing">
                     <b class="advantages-title-inner">Жильё</b>
-                    <p class="advantages-description-inner">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+                    <p class="advantages-description-inner">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
                   </li>
-                  <li class="advantages-item-inner advantages-block-white advantages-food">
+                  <li class="advantages-item-inner advantages-item-inner-service advantages-block-white advantages-food">
                     <b class="advantages-title-inner">Еда</b>
-                    <p class="advantages-description-inner">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="advantages-description-inner">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
                   </li>
-                  <li class="advantages-item-inner advantages-souvenirs">
+                  <li class="advantages-item-inner advantages-item-inner-service advantages-souvenirs">
                     <b class="advantages-title-inner">Сувениры</b>
-                    <p class="advantages-description-inner">Не только китайского, но и настоящего местного производства!</p>
+                    <p class="advantages-description-inner">Не только китайского,<br>но и настоящего местного<br>производства!</p>
                   </li>
                 </ul>
               </li>
@@ -185,13 +186,13 @@
         </button>
 
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-form-label"><span class="modal-form-label-text">Дата заезда:</span>
+          <label class="modal-form-label"><span class="modal-form-label-text">Дата Заезда:</span>
             <input class="modal-form-date" type="text" placeholder="27 апреля 2020" name="date-in" required>
             <span class="underinput-sign date-in-wrong">Мы не можем отправить вас в прошлое.</span>
           </label>
 
-          <label class="modal-form-label"><span class="modal-form-label-text">Дата выезда:</span>
-            <input class="modal-form-date" type="text" placeholder="1 сентября 2021" name="date-out" required>
+          <label class="modal-form-label"><span class="modal-form-label-text">Дата Выезда:</span>
+            <input class="modal-form-date" type="text" placeholder="1 сентября 2023" name="date-out" required>
             <span class="underinput-sign free-room">На эти даты есть свободные номера. Пока есть.</span>
           </label>
           <div class="modal-form-buttons-container">
@@ -216,9 +217,9 @@
                 <b class="modal-form-label modal-form-label-text modal-form-label-text-kids">Дети:</b>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <span class="tooltip-text kids-information" id="tooltip-label-date" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                      </span>
+                      <span class="tooltip-text" id="tooltip-label-date" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </button>
+                  </span>
               </span>
                 <div class="modal-selector">
                   <button class="modal-form-select-button" type="button" value="less">

@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-html{
+html {
   height: 100%;
 }
 
@@ -23,21 +23,25 @@ html{
   --main-color: #000000;
 }
 
-body {
-  margin: 0;
+.page-container {
+  width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   width: 100%;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -67,6 +71,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   border-width: 0;
 }
 
@@ -76,7 +81,6 @@ body {
   width: 570;
   margin: 0;
   margin-right: auto;
-  margin-left: 40px;
   padding: 0;
   list-style-type: none;
 }
@@ -102,6 +106,8 @@ body {
   width: 310px;
   margin: 0;
   margin-left: auto;
+  margin-right: 27px;
+
   list-style-type: none;
 }
 
@@ -113,8 +119,8 @@ body {
   text-decoration: none;
   color: var(--main-color);
   margin: 0 16px;
-  padding-top: 16px;
-  padding-bottom: 24px;
+  padding-top: 19px;
+  padding-bottom: 20px;
 }
 
 .navigation-link-user {
@@ -247,6 +253,7 @@ body {
   flex-wrap: wrap;
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0 85px;
   text-align: center;
 }
@@ -261,6 +268,8 @@ body {
 }
 
 .advantages-title {
+  text-align: center;
+  width: 100%;
   box-sizing: border-box;
   display: block;
   align-self: flex-end;
@@ -295,6 +304,11 @@ body {
   min-width: 400px;
   min-height: 384px;
   list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.advantages-item-inner-service {
+  padding-bottom: 6px;
 }
 
 .advantages-item-town::before {
@@ -415,7 +429,7 @@ body {
   line-height: 26px;
   max-width: 475px;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
 }
 
 .newsletter-form {
@@ -434,6 +448,7 @@ body {
 }
 
 .newsletter-button-text {
+  font-family: inherit;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
@@ -457,7 +472,13 @@ body {
   border-width: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
 
+.field::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
 }
 
 .footer-bottom {
@@ -466,7 +487,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 70px 30px;
+  padding: 43px 70px 30px;
 }
 
 .footer-social-list {
@@ -529,13 +550,14 @@ body {
 }
 
 .modal-form-container {
+  display: flex;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .modal {
@@ -563,12 +585,12 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 65px;
 }
 
 .modal-form-close-button {
   position: absolute;
-  right: 50px;
+  right: 52px;
   padding: 20px;
   border-radius: 50%;
   border: none;
@@ -608,13 +630,8 @@ body {
   margin-right: 24px;
 }
 
-.modal-form-date {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-}
-
 .modal-form-date::placeholder {
+  font-family: 'PT Sans';
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -724,17 +741,20 @@ body {
 }
 
 .tooltip-text {
+  font-family: 'PT Sans';
   display: none;
   box-sizing: border-box;
   position: absolute;
   font-size: 16px;
   line-height: 20px;
-  padding: 15px 18px;
+  padding: 21px 18px;
+  padding-left: 25px;
   color: #ffffff;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   width: 256px;
+  min-height: 142px;
   font-weight: 400;
   white-space: pre-wrap;
   text-align: left;
@@ -774,6 +794,7 @@ body {
 
 .inner-header-container {
   width: 1200px;
+  margin: 0 auto;
   min-height: 412px;
   color: #ffffff;
   background-color: #444444;
@@ -804,7 +825,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
 }
 
 .breadcrumbs {
@@ -813,7 +834,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 21px;
-  margin-bottom: 46px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -829,16 +852,15 @@ body {
 }
 
 .select-control-container {
+  margin: 0 auto;
   width: 1060px;
   display: flex;
-  justify-content: space-between;
-  margin: 0 70px;
 }
 
 .price-input {
   box-sizing: border-box;
-  width: 143px;
-  min-height: 48px;
+  width: 141px;
+  min-height: 46px;
   background-color: #F2F2F2;
   border-width: 0;
   padding-left: 20px;
@@ -850,6 +872,7 @@ body {
 
 .price-input::placeholder {
   font-weight: 700;
+  font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
@@ -862,14 +885,10 @@ body {
 .from-to {
   position: absolute;
   top: 12px;
-  right: 20px;
+  right: 18px;
   line-height: 24px;
   color: #000000;
   opacity: 0.3;
-}
-
-.from-to {
-  right: 12px;
 }
 
 .price-input-from {
@@ -924,7 +943,7 @@ body {
   -webkit-appearance: none;
   appearance: none;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 72px;
   padding-left: 20px;
   color: #333333;
   min-width: 292px;
@@ -932,7 +951,10 @@ body {
   border-radius: 4px;
   background-image: url("../images/hotels-catalog/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 94% 50%;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .sort-button-container {
@@ -940,8 +962,8 @@ body {
 }
 
 .sort-button {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   margin-right: 8px;
   display: flex;
   border: 2px solid #E5E5E5;
@@ -982,16 +1004,21 @@ body {
 .catalog-filter-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 70px
 }
 
 .catalog-filter-list {
   display: grid;
-  gap: 19px;
+  gap: 18px;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content min-content;
   list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.radiobutton-list {
+  margin-right: 82px;
 }
 
 .catalog-filter-title {
@@ -1063,6 +1090,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 7px;
 }
 
 .cheap {
@@ -1077,11 +1105,11 @@ body {
 .inns-card {
   width: 1060px;
   display: grid;
-  gap: 20px;
+  gap: 18px;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 82px;
   padding: 0;
 }
 
