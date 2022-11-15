@@ -87,7 +87,6 @@ body {
 
 .navigation-item {
   max-height: 64px;
-
 }
 
 .logo-link {
@@ -107,7 +106,6 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: 27px;
-
   list-style-type: none;
 }
 
@@ -158,7 +156,6 @@ body {
   border-radius: 50%;
   line-height: 10px;
   color: #ffffff;
-
 }
 
 .button-form {
@@ -415,6 +412,18 @@ body {
   background-size: cover;
 }
 
+.newsletter {
+  box-sizing: border-box;
+  min-height: 415px;
+  color: #000000;
+  width: 1200px;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: none;
+  padding-top: 96px;
+  background-size: cover;
+}
+
 .subscribe-title {
   text-transform: uppercase;
   font-weight: 700;
@@ -540,7 +549,6 @@ body {
   width: 115px;
   min-height: 33px;
   margin: 0;
-
 }
 
 .footer-logo-link {
@@ -550,7 +558,7 @@ body {
 }
 
 .modal-form-container {
-  display: flex;
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -801,7 +809,6 @@ body {
   background-image: url("../images/background-photos/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-
 }
 .inner-header {
   padding: 0 70px;
@@ -858,22 +865,19 @@ body {
 }
 
 .price-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   box-sizing: border-box;
   width: 141px;
   min-height: 46px;
   background-color: #F2F2F2;
   border-width: 0;
   padding-left: 20px;
-  padding-right: 30px;
-  font-weight: 700;
-  line-height: 24px;
   color: #000000;
 }
 
 .price-input::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
   color: #000000;
 }
 
@@ -936,7 +940,6 @@ body {
 .filter-buttons-container {
   display: flex;
   flex-direction: column;
-
 }
 
 .select-control {
@@ -1330,7 +1333,6 @@ body {
 .select-control:disabled {
   color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(0, 0, 0, 0.3);
-
 }
 
 .price-input:hover {
@@ -1338,13 +1340,13 @@ body {
 }
 
 .price-input:focus {
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
+  border: none;
 }
 
 .price-input:active {
-  border: 2px solid #000000;
-  outline: none;
+  outline: 2px solid #000000;
+  border: none;
 }
 
 .pagination-link:hover, .pagination-link:focus{
@@ -1508,4 +1510,9 @@ body {
 
 .tooltip-toggle:hover .tooltip-text, .tooltip-toggle:focus .tooltip-text {
   display: block;
+}
+
+.field:focus {
+  outline: 3px solid #83B3D3;
+  border: none;
 }
