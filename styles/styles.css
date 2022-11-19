@@ -228,6 +228,7 @@ body {
   color: #333333;
   margin: 0 auto;
   margin-bottom: 90px;
+  padding: 0 20px;
 }
 
 .advantages-first-block {
@@ -251,8 +252,12 @@ body {
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding: 0 85px;
+  padding: 20px 85px;
   text-align: center;
+}
+
+.first-block-image {
+  min-height: 100%;
 }
 
 .first-block-text-container::before {
@@ -301,7 +306,7 @@ body {
   min-width: 400px;
   min-height: 384px;
   list-style-type: none;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .advantages-item-inner-service {
@@ -330,14 +335,17 @@ body {
   margin: 0 auto;
   max-width: 230px;
   order: 3;
+  padding-bottom: 20px;
 }
 
 .advantages-food::before {
   content: url("../images/index-main-content/advantage-food.svg");
+  padding-top: 4px;
 }
 
 .advantages-housing::before {
   content: url("../images/index-main-content/advantage-house.svg");
+  padding-top: 4px;
 }
 
 .advantages-souvenirs::before {
@@ -445,6 +453,7 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .newsletter-button {
@@ -469,13 +478,14 @@ body {
 }
 
 .field {
+  font-size: 18px;
+  line-height: 24px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   padding-left: 20px;
   width: 452px;
   height: 52px;
-  line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
   border-width: 0;
@@ -504,6 +514,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 150px;
 }
 
 .footer-social-item {
@@ -597,8 +608,10 @@ body {
 }
 
 .modal-form-close-button {
+  width: 52px;
+  height: 52px;
   position: absolute;
-  right: 52px;
+  right: 55px;
   padding: 20px;
   border-radius: 50%;
   border: none;
@@ -610,6 +623,7 @@ body {
 }
 
 .modal-form-date {
+  position: relative;
   box-sizing: border-box;
   margin: 0;
   padding: 0 20px;
@@ -624,6 +638,7 @@ body {
   margin-left: auto;
 }
 
+
 .modal-form-label {
   position: relative;
   display: flex;
@@ -631,6 +646,15 @@ body {
   font-size: 20px;
   line-height: 24px;
   white-space: nowrap;
+}
+
+.modal-form-label-date::after {
+  content: url("../images/index-main-content/calendar-icon.svg");
+  position: absolute;
+  opacity: 0.3;
+  top: 12px;
+  right: 24px;
+
 }
 
 .modal-form-label-text {
@@ -644,6 +668,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  opacity: 1;
 }
 
 .date-in-wrong {
@@ -663,6 +688,7 @@ body {
   margin: 0;
   vertical-align: middle;
   font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
   width: 31px;
   height: 48px;
@@ -675,6 +701,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color:#000000;
+  opacity: 1;
 }
 
 .underinput-sign {
@@ -784,6 +811,8 @@ body {
 .modal-form-send-button {
   box-sizing: border-box;
   display: inline-block;
+  border: none;
+  cursor: pointer;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -809,18 +838,16 @@ body {
   background-image: url("../images/background-photos/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 }
 .inner-header {
   padding: 0 70px;
   padding-top: 35px;
+  padding-bottom: 20px;
 }
 
 .catalog {
   padding: 50px 0 60px;
-  margin: 0;
-}
-
-.catalog-title {
   margin: 0;
 }
 
@@ -832,7 +859,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin-bottom: 7px;
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -842,6 +869,7 @@ body {
   flex-wrap: wrap;
   min-height: 21px;
   margin: 0;
+  margin-top: 7px;
   margin-bottom: 40px;
   padding: 0;
 }
@@ -849,13 +877,16 @@ body {
 .breadcrumbs-link {
   font-size: 16px;
   fill: #FFFFFF;
+  padding: 7px 0;
+  padding-left: 0;
+  padding-right: 10px;
 }
 
 .breadcrumbs-item-next {
   background-image: url("../images/hotels-catalog/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
-  padding-left: 28px;
-  background-position: 11px;
+  padding-left: 18px;
+  background-position: 1px;
 }
 
 .select-control-container {
@@ -874,11 +905,13 @@ body {
   background-color: #F2F2F2;
   border-width: 0;
   padding-left: 20px;
+  padding-right: 40px;
   color: #000000;
 }
 
 .price-input::placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 .from-to-container {
@@ -898,11 +931,16 @@ body {
 .price-input-from {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  min-width: 143px;
+  min-height: 48px;
 }
 
 .price-input-to {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  min-width: 143px;
+  margin-left: -4px;
+  min-height: 48px;
 }
 
 .range-scale {
@@ -940,6 +978,8 @@ body {
 .filter-buttons-container {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+  margin-top: 56px;
 }
 
 .select-control {
@@ -958,6 +998,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  background-color: #ffffff;
 }
 
 .sort-button-container {
@@ -1030,6 +1071,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 34px;
+}
+
+.catalog-filter-title-input {
+  margin-bottom: 32px;
 }
 
 .control {
@@ -1118,6 +1163,7 @@ body {
 
 .inn-card-item {
   display: grid;
+  align-content: baseline;
   grid-template-columns: min-content min-content;
   row-gap: 16px;
   column-gap: 20px;
@@ -1195,7 +1241,6 @@ body {
   background-color: var(--main-bg-color);
   text-transform: uppercase;
   text-align: center;
-  grid-column: 2 / -1;
   padding: 8px 0;
   border-radius: 4px;
 }
@@ -1363,6 +1408,15 @@ body {
 .pagination-current:hover, .pagination-current:focus, .pagination-current.active {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.pagination-space-between:hover,
+.pagination-space-between:active,
+.pagination-space-between:focus {
+  background-color: #82B3D3;
+  color: #ffffff;
+  border: none;
+  outline: none;
 }
 
 .breadcrumbs-icon {
