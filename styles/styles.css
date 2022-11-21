@@ -169,7 +169,7 @@ body {
   padding: 8px 0;
   text-align: center;
   margin: 14px 0;
-  margin-left: 20px;
+  margin-left: 19px;
   text-transform: uppercase;
   border-radius: 4px;
 }
@@ -251,13 +251,14 @@ body {
   flex-wrap: wrap;
   max-width: 400px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 20px 85px;
+  padding: 92px 85px;
+  padding-bottom: 111px;
   text-align: center;
 }
 
 .first-block-image {
   min-height: 100%;
+  object-fit: cover;
 }
 
 .first-block-text-container::before {
@@ -298,7 +299,7 @@ body {
 .advantages-item-inner {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 27px;
   justify-content: center;
   box-sizing: border-box;
   color: #333333;
@@ -306,11 +307,13 @@ body {
   min-width: 400px;
   min-height: 384px;
   list-style-type: none;
-  padding: 20px;
+  padding: 103px 85px;
+  padding-bottom: 121px;
 }
 
 .advantages-item-inner-service {
-  padding-bottom: 6px;
+  padding: 80px 85px;
+  padding-bottom: 81px;
 }
 
 .advantages-item-town::before {
@@ -335,17 +338,14 @@ body {
   margin: 0 auto;
   max-width: 230px;
   order: 3;
-  padding-bottom: 20px;
 }
 
 .advantages-food::before {
   content: url("../images/index-main-content/advantage-food.svg");
-  padding-top: 4px;
 }
 
 .advantages-housing::before {
   content: url("../images/index-main-content/advantage-house.svg");
-  padding-top: 4px;
 }
 
 .advantages-souvenirs::before {
@@ -453,7 +453,7 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 104px;
 }
 
 .newsletter-button {
@@ -1222,16 +1222,20 @@ body {
 .stars-4 {
   background-image: url("../images/hotels-catalog/stars-4.svg");
   background-repeat: no-repeat;
+  min-height: 37px;
+  grid-column: 1 / 2;
 }
 
 .stars-3 {
   background-image: url("../images/hotels-catalog/stars-3.svg");
   background-repeat: no-repeat;
+  grid-column: 1 / 2;
 }
 
 .stars-2 {
   background-image: url("../images/hotels-catalog/stars-2.svg");
   background-repeat: no-repeat;
+  grid-column: 1 / 2;
 }
 
 .rating {
@@ -1276,6 +1280,14 @@ body {
   line-height: 36px;
   color: var(--main-color);
   background-color: var(--main-bg-color);
+}
+
+.pagination-space-between {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #ffffff;
 }
 
 .newsletter-container {
@@ -1413,8 +1425,8 @@ body {
 .pagination-space-between:hover,
 .pagination-space-between:active,
 .pagination-space-between:focus {
-  background-color: #82B3D3;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: var(--main-color);
   border: none;
   outline: none;
 }
